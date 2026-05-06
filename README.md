@@ -12,6 +12,26 @@ This repository accompanies the paper and provides:
 - **`run_compare.py`** — Compares the bias from all three HD methods on the same structure in a single step.
 - **`run_hd.py`** — Runs multi-step HD-MD using Bond-Boost, MMF, or J-MMF.
 
+---
+
+## About
+
+**HDkit** is a lightweight Hyperdynamics toolkit extracted from
+**[DLTS](https://github.com/ZhangLabTHU)** (Deep Long Time Simulation package),
+a larger project developed by [ZhangLab](https://www.zhanglab-thu.com)
+([@ZhangLabTHU](https://github.com/ZhangLabTHU)) for long-time-scale
+molecular dynamics simulations.  HDkit contains only the Hyperdynamics-related
+code from DLTS, streamlined for ease of use and reproducibility.
+
+The Hyperdynamics code in both HDkit and DLTS was written by
+**[PhoenixQian](https://github.com/PhoenixQian)** ([649811459@qq.com](mailto:649811459@qq.com)).
+
+> **Paper status**: This repository is a small companion project for a paper
+> currently under review.  The paper link and citation format will be added
+> after publication.
+
+---
+
 > **Note**: HDkit is a **simplified reference implementation** of the algorithms
 > described in our paper.  It focuses on correctness of the core methods; some
 > engineering details (error recovery, MPI support, production-grade I/O) are
@@ -24,6 +44,7 @@ This repository accompanies the paper and provides:
 
 ## Table of Contents
 
+- [About](#about)
 - [Getting Started](#getting-started)
   - [Repository Setup](#repository-setup)
   - [Environment Setup](#environment-setup)
@@ -54,6 +75,13 @@ This repository accompanies the paper and provides:
 git clone https://github.com/ZhangLabTHU/HDkit-example.git
 cd HDkit-example
 ```
+
+> **Results branch**: After running the simulations yourself, you can check out
+> the `results` branch to see the pre-computed output files:
+>
+> ```bash
+> git checkout results
+> ```
 
 The repository contains everything needed to run the examples:
 
